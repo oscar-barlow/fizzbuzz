@@ -1,1 +1,2 @@
-WIPE IT CLEAN
+def fizzbuzz(n)
+end
