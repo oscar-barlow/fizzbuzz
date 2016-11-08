@@ -9,4 +9,8 @@ describe 'Fizzbuzz' do
     expect(fizzbuzz(10)).to eq 'buzz'
   end
 
+  it 'returns "fizzbuzz" when given a number divisible by both 3 and 5' do
+    expect(fizzbuzz(30)).to eq 'fizzbuzz'
+  end
+
 end
