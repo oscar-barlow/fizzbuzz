@@ -12,6 +12,10 @@ describe "fizzbuzz" do
       expect(is_divisible_by_5?(5)).to eq true
     end
 
+    it 'checks for divisibility by 15' do
+      expect(is_divisible_by_15?(15)).to eq true
+    end
+
   end
 
   context "when given a number that fizzbuzz should just return," do
@@ -22,6 +26,10 @@ describe "fizzbuzz" do
 
     it 'checks for indivisibility by 5' do
       expect(is_divisible_by_5?(6)).to eq false
+    end
+
+    it 'checks for indivisibility by 15' do
+      expect(is_divisible_by_15?(16)).to eq false
     end
 
   end
