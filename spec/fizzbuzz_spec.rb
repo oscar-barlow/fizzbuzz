@@ -44,6 +44,23 @@ describe '#fizzbuzz' do
       expect(fizzbuzz(5)).to eq 'buzz'
     end
 
+    it 'returns "fizzbuzz" for numbers divisible by both 3 and 5' do
+      expect(fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+
+    it 'returns the number it was given if not divisible by either 3 or 5' do
+      expect(fizzbuzz(4)).to eq 4
+      expect(fizzbuzz(0)).to eq 0
+    end
+
+  end
+
+  context "when given invalid input," do
+
+    it 'should raise an error if you give it anything except a number' do
+      expect{ fizzbuzz(i) }.to raise_error(NameError)
+    end
+
   end
 
 end
