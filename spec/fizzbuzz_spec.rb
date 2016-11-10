@@ -1,6 +1,6 @@
 require 'fizzbuzz'
 
-describe "fizzbuzz" do
+describe '#fizzbuzz' do
 
   context "when given a number that fizzbuzz should do something to," do
 
