@@ -40,6 +40,10 @@ describe '#fizzbuzz' do
       expect(fizzbuzz(3)).to eq 'fizz'
     end
 
+    it 'returns "buzz" for numbers divisible by 5' do
+      expect(fizzbuzz(5)).to eq 'buzz'
+    end
+
   end
 
 end
