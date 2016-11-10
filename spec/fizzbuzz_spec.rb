@@ -34,4 +34,12 @@ describe '#fizzbuzz' do
 
   end
 
+  context "returns words for appropriate numbers" do
+
+    it 'returns "fizz" for numbers divisible by 3' do
+      expect(fizzbuzz(3)).to eq 'fizz'
+    end
+
+  end
+
 end
